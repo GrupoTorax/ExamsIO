@@ -1,7 +1,6 @@
-package org.torax.examsio;
+package org.paim.examsio;
 
 import com.pixelmed.dicom.Attribute;
-import org.torax.commons.Exam;
 import com.pixelmed.dicom.AttributeList;
 import com.pixelmed.dicom.DicomException;
 import com.pixelmed.dicom.ModalityTransform;
@@ -10,7 +9,9 @@ import com.pixelmed.display.SourceImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.regex.Pattern;
-import org.torax.commons.ExamSlice;
+import org.paim.commons.Exam;
+import org.paim.commons.ExamSlice;
+
 
 /**
  * Loads an exam from any source

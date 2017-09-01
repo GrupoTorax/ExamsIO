@@ -1,4 +1,4 @@
-package org.torax.examsio;
+package org.paim.examsio;
 
 /**
  * Exception
