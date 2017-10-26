@@ -8,6 +8,7 @@ import com.pixelmed.dicom.TagFromName;
 import com.pixelmed.display.SourceImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.regex.Pattern;
 import org.paim.commons.Exam;
 import org.paim.commons.ExamSlice;
@@ -41,6 +42,7 @@ public class ExamLoader {
         if (files.length == 0) {
             throw new ExamLoaderException("Diretório não possui exames! Conteúdo: " + folder.toString());
         }
+        Arrays.sort(files);
         Exam exam = new Exam();
         for (File file : files) {
             loadFileToExam(file, exam);
